@@ -30,20 +30,13 @@ div.week-list {
 
 }
 
-/*IMAGES*/
 img {
   position: inline;
-  transition: transform .2s;
-  /* Animation */
   width: 200px;
   height: 200px;
   margin: 0 auto;
 }
 
-img:hover {
-  transform: scale(1.5);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 
 /***********************CONTACT PAGE************************/
 .contact-sheet {
@@ -88,8 +81,23 @@ header {
   margin-bottom: 30px;
 }
 
-h1 {
-  font-size: 2.5em;
+.hotdog {
+  padding: 10px;
+}
+
+.main-head {
+  font-size: 4em;
+  padding: 10px;
+  font-family: hoosier-daddy, sans-serif;
+  font-weight: 400;
+
+
+
+
+  color: rgb(163, 2, 2);
+
+  text-shadow: #000000, 85px;
+  font-style: normal;
 }
 
 h2 {
@@ -346,12 +354,16 @@ div.sidebar ul {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
+
   justify-content: center;
+
 }
 
 .skills-imgs {
-  padding: 20px;
+  padding: 60px;
 }
+
+
 
 #articles a {
   text-decoration: none;
@@ -365,7 +377,72 @@ div.sidebar ul {
 }
 
 
-/*BLOGSPOSTS*/
+/*******HOMEPAGE ARTICLES***********/
+/*HOMEPAGE ARTICLE BOXES*/
+.bread-basket-box,
+.dessert-box,
+.mezcal-box,
+.vibes-box,
+.rooftop-box,
+.brunch-box,
+.openings-box,
+.gras-box,
+.cocktail-box {
+  border: solid;
+  padding: 10px;
+  height: 300px;
+  width: auto;
+
+  transition: transform .2s;
+}
+
+
+.bread-basket-box:hover,
+.dessert-box:hover,
+.mezcal-box:hover,
+.vibes-box:hover,
+.rooftop-box:hover,
+.brunch-box:hover,
+.openings-box:hover,
+.gras-box:hover,
+.cocktail-box:hover {
+  transform: scale(1.5);
+}
+
+/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
+}
+
+/*HOMEPAGE ARTICLE TITLES*/
+.bread-basket-txt,
+.dessert-txt,
+.mezcal-txt,
+.vibes-txt,
+.rooftop-txt,
+.brunch-txt,
+.openings-txt,
+.gras-txt,
+.cocktail-txt {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.skills-imgz {
+  padding: 10px;
+  display: block;
+}
+
+/*HOMEPAGE BREAD BASKET*/
+
+.bread-basket-box img {
+  height: 210px;
+  width: auto
+}
+
+
+
+
+/*BLOGSPOSTS***********************/
 #blog-post h2 {
   text-align: center;
 }
@@ -394,4 +471,63 @@ div.sidebar ul {
 .date {
   padding: 10px;
   color: grey;
+}
+
+
+
+/**BORDER**/
+#top,
+#bottom,
+#left,
+#right {
+  position: fixed;
+  z-index: 1;
+  background: rgb(62, 141, 194);
+}
+
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+@media
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  #top,
+  #bottom,
+  #left,
+  #right {
+    display: none;
+  }
+
+
 }
