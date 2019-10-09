@@ -1,0 +1,533 @@
+/****************WHAT'S GOING ON? WEEKLY LIST**************/
+/*LINKS*/
+div.week-list a {
+  color: black;
+}
+
+div.week-list a:hover {
+  color: red;
+  text-decoration: underline red;
+  transition-duration: 1.5s;
+}
+
+/*TEXT STYLE*/
+div.week-list {
+  word-spacing: 2px;
+  line-height: 1.6;
+}
+
+#the-weekly-list {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 40px;
+}
+
+.weekly-list {
+  padding: 2em;
+}
+
+.ol {
+  padding: 2px;
+
+}
+
+img {
+  position: inline;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+
+/***********************CONTACT PAGE************************/
+.contact-sheet {
+  word-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*************************LAYOUT****************************/
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro,
+.anna-supporting {
+  box-sizing: border-box;
+}
+
+aside {
+  width: 20%;
+  box-sizing: border-box;
+  position: fixed;
+  border: solid 1px black;
+}
+
+.clear {
+  clear: both;
+}
+
+.page-wrapper {
+  padding: 1.5em;
+
+}
+
+/***************************HEADER*************************/
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hotdog {
+  padding: 10px;
+}
+
+.main-head {
+  font-size: 4em;
+  padding: 10px;
+  font-family: hoosier-daddy, sans-serif;
+  font-weight: 400;
+
+
+
+
+  color: rgb(163, 2, 2);
+
+  text-shadow: #000000, 85px;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+/*************************MAIN*****************************/
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.anna-supporting {
+  padding: 10px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+div.summary,
+div.anna-supporting,
+div.post-one,
+div.post-two {
+  word-spacing: 2px;
+  margin: 1em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/***************************FOOTER*************************/
+footer {
+  margin-top: 50px;
+  position: fixed;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: red;
+  text-decoration: underline red;
+  transition-duration: 1.5s;
+}
+
+
+/***********************SIDEBAR***************************/
+.sidebar {
+  position: fixed;
+  border: solid 1px black;
+}
+
+#page-selection {
+  padding: 2px;
+  font-size: .90em;
+}
+
+.li {
+  padding: 5px;
+}
+
+.page-selection {
+  margin: 1em;
+  text-transform: uppercase;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .90em;
+  line-height: 4em;
+}
+
+div.page-selection a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 3px;
+}
+
+div.page-selection a:hover {
+  color: red;
+  transition-duration: 2s;
+}
+
+div.sidebar ul {
+  list-style: none;
+  padding: 3px;
+}
+
+/*Dropdown Button */
+.dropbtn {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1EM;
+  border: none;
+  padding: 3px;
+}
+
+.dropbtn:hover {
+  color: red;
+  transition-duration: 2s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: red;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*************************MEDIA**************************/
+
+
+/**BURGER BUTTON**/
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(44, 73, 204);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/******MEDIA Q*******/
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(29, 29, 36);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    /**MOVE CONTAINER OFF THE SCREEN**/
+    transition: transform 0.5s ease-in;
+  }
+
+  .burger {
+    display: block;
+  }
+
+}
+
+/***NAV ANIMATION**/
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+
+/**NAV STYLES**/
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+
+}
+
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*GRID*/
+.skills-img-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  justify-content: center;
+
+}
+
+.skills-imgs {
+  padding: 60px;
+}
+
+
+
+#articles a {
+  text-decoration: none;
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#articles a:hover {
+  color: red;
+  transition: 2s;
+}
+
+
+/*******HOMEPAGE ARTICLES***********/
+/*HOMEPAGE ARTICLE BOXES*/
+.bread-basket-box,
+.dessert-box,
+.mezcal-box,
+.vibes-box,
+.rooftop-box,
+.brunch-box,
+.openings-box,
+.gras-box,
+.cocktail-box {
+  border: solid;
+  padding: 10px;
+  height: 300px;
+  width: auto;
+
+  transition: transform .2s;
+}
+
+
+.bread-basket-box:hover,
+.dessert-box:hover,
+.mezcal-box:hover,
+.vibes-box:hover,
+.rooftop-box:hover,
+.brunch-box:hover,
+.openings-box:hover,
+.gras-box:hover,
+.cocktail-box:hover {
+  transform: scale(1.5);
+}
+
+/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
+}
+
+/*HOMEPAGE ARTICLE TITLES*/
+.bread-basket-txt,
+.dessert-txt,
+.mezcal-txt,
+.vibes-txt,
+.rooftop-txt,
+.brunch-txt,
+.openings-txt,
+.gras-txt,
+.cocktail-txt {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.skills-imgz {
+  padding: 10px;
+  display: block;
+}
+
+/*HOMEPAGE BREAD BASKET*/
+
+.bread-basket-box img {
+  height: 210px;
+  width: auto
+}
+
+
+
+
+/*BLOGSPOSTS***********************/
+#blog-post h2 {
+  text-align: center;
+}
+
+#blog-post p {
+  margin: 20px;
+}
+
+.blogbox {
+  margin: 40px;
+  -moz-box-shadow: inset 0 0 10px #a06f6f;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px;
+  z-index: -2;
+  display: -moz-inline-stack;
+  background-color: rgb(226, 226, 226);
+}
+
+.blogbox .blogcontent {
+  position: relative;
+  /* This protects the inner element from being blurred */
+  padding: 40px;
+
+}
+
+.date {
+  padding: 10px;
+  color: grey;
+}
+
+
+
+/**BORDER**/
+#top,
+#bottom,
+#left,
+#right {
+  position: fixed;
+  z-index: 1;
+  background: rgb(62, 141, 194);
+}
+
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+@media
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  #top,
+  #bottom,
+  #left,
+  #right {
+    display: none;
+  }
+
+
+}
