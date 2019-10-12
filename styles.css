@@ -325,7 +325,7 @@ div.sidebar ul {
   html,
   body {
     overflow-x: hidden;
-    position: fixed;
+    position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -334,7 +334,8 @@ div.sidebar ul {
 
   .nav-links {
     display: flex;
-    position: absolute;
+    position: fixed;
+    ;
     right: 0px;
     left: 0px;
     height: 92vh;
