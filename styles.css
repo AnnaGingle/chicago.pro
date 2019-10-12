@@ -393,10 +393,13 @@ div.sidebar ul {
   .openings-box,
   .gras-box,
   .cocktail-box {
-    width: 80%;
+    min-width: 400px;
+    justify-content: center;
   }
 
-
+  .skills-imgs p {
+    font: 20px;
+  }
 
 
 
