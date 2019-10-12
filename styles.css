@@ -37,6 +37,9 @@ img {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /***********************CONTACT PAGE************************/
 .contact-sheet {
@@ -346,7 +349,7 @@ div.sidebar ul {
     z-index: 100;
     width: 50%;
     align-items: center;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     /**MOVE CONTAINER OFF THE SCREEN**/
     transition: transform 0.5s ease-in;
   }
@@ -414,7 +417,6 @@ div.sidebar ul {
 
 
 .nav-links {
-  display: flex;
   justify-content: space-around;
 
   text-decoration: none;
