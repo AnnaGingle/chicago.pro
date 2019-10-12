@@ -384,6 +384,22 @@ div.sidebar ul {
     padding: 60px;
   }
 
+  .bread-basket-box,
+  .dessert-box,
+  .mezcal-box,
+  .vibes-box,
+  .rooftop-box,
+  .brunch-box,
+  .openings-box,
+  .gras-box,
+  .cocktail-box {
+    width: 80%;
+  }
+
+
+
+
+
 }
 
 
