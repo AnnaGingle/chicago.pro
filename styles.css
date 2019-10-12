@@ -325,6 +325,8 @@ div.sidebar ul {
   html,
   body {
     overflow-x: hidden;
+    position: relative;
+    height: 100%;
   }
 
 
