@@ -378,20 +378,11 @@ div.sidebar ul {
     padding: 5px;
   }
 
-  .bread-basket-box,
-  .dessert-box,
-  .mezcal-box,
-  .vibes-box,
-  .rooftop-box,
-  .brunch-box,
-  .openings-box,
-  .gras-box,
-  .cocktail-box {
-    width: 1000px;
-    height: 300px;
 
+
+  .skills-imgs {
+    width: 500px;
   }
-
 
   /***NAV ANIMATION**/
   @keyframes navLinkFade {
