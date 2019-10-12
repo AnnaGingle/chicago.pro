@@ -373,11 +373,13 @@ div.sidebar ul {
 /***NAV ANIMATION**/
 @keyframes navLinkFade {
   from {
+    display: none;
     opacity: 0;
     transform: translateX(50px)
   }
 
   to {
+    display: flex;
     opacity: 1;
     transform: translateX(0px);
   }
