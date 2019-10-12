@@ -336,7 +336,6 @@ div.sidebar ul {
     display: flex;
     position: absolute;
     right: 0px;
-    left: -5;
     height: 92vh;
     top: 8vh;
     border: solid 1px black;
