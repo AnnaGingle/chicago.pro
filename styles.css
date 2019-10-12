@@ -90,12 +90,7 @@ header {
   padding: 10px;
   font-family: hoosier-daddy, sans-serif;
   font-weight: 400;
-
-
-
-
   color: rgb(163, 2, 2);
-
   text-shadow: #000000, 85px;
   font-style: normal;
 }
@@ -158,10 +153,10 @@ footer a:hover {
 
 
 /***********************SIDEBAR***************************/
-.sidebar {
+/*.sidebar {
   position: fixed;
   border: solid 1px black;
-}
+}*/
 
 #page-selection {
   padding: 2px;
@@ -199,7 +194,7 @@ div.sidebar ul {
   padding: 3px;
 }
 
-/*Dropdown Button */
+/*Dropdown Button 
 .dropbtn {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
@@ -213,13 +208,13 @@ div.sidebar ul {
   transition-duration: 2s;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* The container <div> - needed to position the dropdown content
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Content (Hidden by Default) 
 .dropdown-content {
   display: none;
   position: absolute;
@@ -229,7 +224,7 @@ div.sidebar ul {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Links inside the dropdown 
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -237,18 +232,71 @@ div.sidebar ul {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
+/* Change color of dropdown links on hover 
 .dropdown-content a:hover {
   color: red;
 }
 
-/* Show the dropdown menu on hover */
+/* Show the dropdown menu on hover 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+*/
 /*************************MEDIA**************************/
+/****Next Button***/
+#next-article-button {
+  color: rgb(226, 226, 226);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 30px;
+  padding: 15px;
+  font-weight: bold;
+}
 
+.btn {
+
+  text-transform: uppercase;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .90em;
+  line-height: 4em;
+  cursor: pointer;
+
+  background-color: Transparent;
+  border: none;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 /**BURGER BUTTON**/
 .burger {
@@ -281,12 +329,15 @@ div.sidebar ul {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgb(29, 29, 36);
+    border: solid 1px black;
+    background-color: rgb(245, 249, 250);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-justify: center;
+    z-index: 100;
+    min-width: 150px;
     align-items: center;
-    width: 50%;
     transform: translateX(100%);
     /**MOVE CONTAINER OFF THE SCREEN**/
     transition: transform 0.5s ease-in;
@@ -296,7 +347,28 @@ div.sidebar ul {
     display: block;
   }
 
+  #top,
+  #bottom,
+  #left,
+  #right {
+    display: none;
+  }
+
+  .main-head {
+    font-size: 2.5em;
+  }
+
+  .hotdog {
+    width: 35%;
+  }
+
+  #next-article-button {
+
+    padding: 5px;
+  }
+
 }
+
 
 /***NAV ANIMATION**/
 @keyframes navLinkFade {
@@ -329,10 +401,12 @@ div.sidebar ul {
 
 
 /**NAV STYLES**/
+
+
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 60%;
+  width: 15%;
   text-decoration: none;
 }
 
@@ -354,9 +428,7 @@ div.sidebar ul {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-
   justify-content: center;
-
 }
 
 .skills-imgs {
@@ -392,24 +464,7 @@ div.sidebar ul {
   padding: 10px;
   height: 300px;
   width: auto;
-
   transition: transform .2s;
-}
-
-
-.bread-basket-box:hover,
-.dessert-box:hover,
-.mezcal-box:hover,
-.vibes-box:hover,
-.rooftop-box:hover,
-.brunch-box:hover,
-.openings-box:hover,
-.gras-box:hover,
-.cocktail-box:hover {
-  transform: scale(1.5);
-}
-
-/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
 }
 
 /*HOMEPAGE ARTICLE TITLES*/
@@ -433,7 +488,6 @@ div.sidebar ul {
 }
 
 /*HOMEPAGE BREAD BASKET*/
-
 .bread-basket-box img {
   height: 210px;
   width: auto
@@ -449,16 +503,16 @@ div.sidebar ul {
 
 #blog-post p {
   margin: 20px;
+  font-family: 'PT Sans'
 }
 
 .blogbox {
   margin: 40px;
-  -moz-box-shadow: inset 0 0 10px #a06f6f;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 10px;
-  z-index: -2;
+  -moz-box-shadow: inset 0 0 10px #ad0707;
+  -webkit-box-shadow: inset 0 0 10px #520707;
+  box-shadow: inset 10 0 10px;
   display: -moz-inline-stack;
-  background-color: rgb(226, 226, 226);
+  background-color: rgba(226, 226, 226, 0.082);
 }
 
 .blogbox .blogcontent {
@@ -468,12 +522,53 @@ div.sidebar ul {
 
 }
 
+.blogcontent {
+  z-index: 1;
+}
+
 .date {
   padding: 10px;
   color: grey;
+  margin-left: 10px;
+  text-align: left;
 }
 
+/***LISTS***/
+.ordered-list-blog {
+  font-family: 'PT Sans';
+  font-size: 30px;
+  padding: 10px;
+  text-align: left;
 
+}
+
+.ordered-list-blog img {
+  justify-content: center;
+  display: block;
+
+}
+
+.ordered-list-p {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.gras-intro {
+  font-family: 'PT Sans';
+
+}
+
+/**FOOTER**/
+footer {
+  background-color: rgb(62, 141, 194);
+}
+
+footer p {
+  color: rgb(10, 5, 31);
+  font-family: sans-serif;
+  padding: 20px;
+  font-size: 12px;
+}
 
 /**BORDER**/
 #top,

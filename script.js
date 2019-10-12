@@ -1,11 +1,25 @@
-window.addEventListener("scroll", function () {
-    parallax("header", window.scrollY, 0.5);
-    parallax("nav", window.scrollY, 1);
-    parallax(".intro-text", window.scrollY, 0.6);
+const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navlinks = document.querySelectorAll(".nav-links li");
 
-    //parallax(".small-rose", window.scrollY, 0.4);
-    //parallax(".big-rose", window.scrollY, 0.2);
-});
 
+    burger.addEventListener("click", () => {
+        //toggle nav
+        nav.classList.toggle("nav-active");
+
+        //animate links
+        navlinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forward ${index / 7}s`;
+            }
+        });
+        //burger animation
+        burger.classList.toggle("toggle");
+    });
+
+}
 
 navSlide();
