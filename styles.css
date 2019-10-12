@@ -332,51 +332,48 @@ div.sidebar ul {
   }
 
 
-}
-
-
-.nav-links {
-  display:
+  .nav-links {
+    display: flex;
     position: absolute;
-  right: 0px;
-  height: 92vh;
-  top: 8vh;
-  border: solid 1px black;
-  background-color: rgb(245, 249, 250);
-  flex-direction: column;
-  justify-content: center;
-  text-justify: center;
-  z-index: 100;
-  width: 50%;
-  align-items: center;
-  transform: translateX(100%);
-  /**MOVE CONTAINER OFF THE SCREEN**/
-  transition: transform 0.5s ease-in;
-}
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    border: solid 1px black;
+    background-color: rgb(245, 249, 250);
+    flex-direction: column;
+    justify-content: center;
+    text-justify: center;
+    z-index: 100;
+    width: 50%;
+    align-items: center;
+    transform: translateX(100%);
+    /**MOVE CONTAINER OFF THE SCREEN**/
+    transition: transform 0.5s ease-in;
+  }
 
-.burger {
-  display: block;
-}
+  .burger {
+    display: block;
+  }
 
-#top,
-#bottom,
-#left,
-#right {
-  display: none;
-}
+  #top,
+  #bottom,
+  #left,
+  #right {
+    display: none;
+  }
 
-.main-head {
-  font-size: 2.5em;
-}
+  .main-head {
+    font-size: 2.5em;
+  }
 
-.hotdog {
-  width: 35%;
-}
+  .hotdog {
+    width: 35%;
+  }
 
-#next-article-button {
+  #next-article-button {
 
-  padding: 5px;
-}
+    padding: 5px;
+  }
 
 }
 
