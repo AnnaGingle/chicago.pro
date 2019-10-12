@@ -393,7 +393,7 @@ div.sidebar ul {
   .openings-box,
   .gras-box,
   .cocktail-box {
-    min-width: 400px;
+    min-width: 200px;
     justify-content: center;
   }
 
