@@ -328,14 +328,13 @@ div.sidebar ul {
     position: relative;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+
   }
 
 
   .nav-links {
     display: flex;
-    position: fixed;
-    ;
+    position: absolute;
     right: 0px;
     left: 0px;
     height: 92vh;
