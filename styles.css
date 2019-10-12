@@ -336,7 +336,7 @@ div.sidebar ul {
     justify-content: center;
     text-justify: center;
     z-index: 100;
-    min-width: 150px;
+    width: 50%;
     align-items: center;
     transform: translateX(100%);
     /**MOVE CONTAINER OFF THE SCREEN**/
