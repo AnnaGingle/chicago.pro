@@ -325,6 +325,7 @@ div.sidebar ul {
   }
 
   .nav-links {
+    display: none;
     position: absolute;
     right: 0px;
     height: 92vh;
@@ -373,13 +374,12 @@ div.sidebar ul {
 /***NAV ANIMATION**/
 @keyframes navLinkFade {
   from {
-    display: none;
     opacity: 0;
     transform: translateX(50px)
   }
 
   to {
-    display: flex;
+
     opacity: 1;
     transform: translateX(0px);
   }
@@ -399,6 +399,8 @@ div.sidebar ul {
 
 .nav-active {
   transform: translateX(0%);
+  display: flex;
+  ;
 }
 
 
