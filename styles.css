@@ -381,7 +381,8 @@ div.sidebar ul {
 
 
   .skills-imgz {
-    padding: 60px;
+    padding: 80px;
+    margin-left: 10px;
   }
 
   .bread-basket-box,
@@ -393,16 +394,16 @@ div.sidebar ul {
   .openings-box,
   .gras-box,
   .cocktail-box {
-    min-width: 200px;
+    min-width: 300px;
     justify-content: center;
+
   }
 
   .skills-imgs p {
     font: 20px;
   }
 
-
-
+  .skill
 }
 
 
