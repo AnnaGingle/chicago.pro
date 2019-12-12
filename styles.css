@@ -1,7 +1,7 @@
 /****************WHAT'S GOING ON? WEEKLY LIST**************/
 /*LINKS*/
 div.week-list a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 div.week-list a:hover {
@@ -30,12 +30,7 @@ div.week-list {
 
 }
 
-img {
-  position: inline;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -48,9 +43,7 @@ html {
 }
 
 /*************************LAYOUT****************************/
-html {
-  scroll-behavior: smooth;
-}
+
 
 img {
   max-width: 100%;
@@ -62,21 +55,13 @@ img {
   box-sizing: border-box;
 }
 
-aside {
-  width: 20%;
-  box-sizing: border-box;
-  position: fixed;
-  border: solid 1px black;
-}
+
 
 .clear {
   clear: both;
 }
 
-.page-wrapper {
-  padding: 1.5em;
 
-}
 
 /***************************HEADER*************************/
 header {
@@ -127,6 +112,7 @@ body {
   margin: 0;
   padding: 0;
 
+
 }
 
 div.summary,
@@ -145,7 +131,7 @@ footer {
 }
 
 footer a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 footer a:hover {
@@ -156,19 +142,13 @@ footer a:hover {
 
 
 /***********************SIDEBAR***************************/
-/*.sidebar {
-  position: fixed;
-  border: solid 1px black;
-}*/
+
 
 #page-selection {
   padding: 2px;
   font-size: .90em;
 }
 
-.li {
-  padding: 5px;
-}
 
 .page-selection {
   margin: 1em;
@@ -181,7 +161,7 @@ footer a:hover {
 
 div.page-selection a {
   display: inline-block;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
   padding: 3px;
@@ -192,59 +172,7 @@ div.page-selection a:hover {
   transition-duration: 2s;
 }
 
-div.sidebar ul {
-  list-style: none;
-  padding: 3px;
-}
 
-/*Dropdown Button 
-.dropbtn {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1EM;
-  border: none;
-  padding: 3px;
-}
-
-.dropbtn:hover {
-  color: red;
-  transition-duration: 2s;
-}
-
-/* The container <div> - needed to position the dropdown content
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-
-  z-index: 1;
-}
-
-/* Links inside the dropdown 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover 
-.dropdown-content a:hover {
-  color: red;
-}
-
-/* Show the dropdown menu on hover 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-*/
 /*************************MEDIA**************************/
 /****Next Button***/
 #next-article-button {
@@ -256,6 +184,34 @@ div.sidebar ul {
   right: 30px;
   padding: 15px;
   font-weight: bold;
+}
+
+.logo {
+  margin-right: 1200px;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  padding-top: 2px;
+  height: 50%;
+  width: auto;
+}
+
+.burger {
+  margin-left: 900px;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  padding-top: 20px;
+}
+
+.burger div {
+  width: 30px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  transition: all 0.3s ease;
+
+
 }
 
 .btn {
@@ -301,19 +257,10 @@ div.sidebar ul {
   right: 0;
 }
 
-/**BURGER BUTTON**/
-.burger {
-  display: none;
-  cursor: pointer;
-}
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(44, 73, 204);
-  margin: 5px;
-  transition: all 0.3s ease;
-}
+
+
+
 
 /******MEDIA Q*******/
 @media screen and (max-width: 1024px) {
@@ -321,43 +268,53 @@ div.sidebar ul {
     width: 60%;
 
   }
+
 }
 
 @media screen and (max-width: 760px) {
 
-  html,
-  body {
-    overflow-x: hidden;
-    position: relative;
+  html {
     height: 100%;
     width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
 
   }
 
-
-  .nav-links {
-    display: flex;
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    border: solid 1px black;
-    background-color: rgb(245, 249, 250);
-    flex-direction: column;
-    justify-content: center;
-    text-justify: center;
-    z-index: 100;
-    width: 50%;
-    align-items: center;
-    transform: translateX(100%);
-    /**MOVE CONTAINER OFF THE SCREEN**/
-    transition: transform 0.5s ease-in;
+  .banner {
+    display: none;
   }
 
-  .burger {
-    display: block;
+
+
+  .mobile-home {
+    min-height: 80vh;
+    /* The image used */
+    background-image: url("images/mobile-banner.png");
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    margin: auto;
   }
 
+
+
+  .logo {
+    margin-right: 370px;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    padding-top: 2px;
+    height: 80%;
+    width: auto;
+  }
+
+
+  /*BOREDER*/
   #top,
   #bottom,
   #left,
@@ -365,6 +322,7 @@ div.sidebar ul {
     display: none;
   }
 
+  /*BASICS*/
   .main-head {
     font-size: 2.0em;
   }
@@ -374,17 +332,16 @@ div.sidebar ul {
   }
 
   #next-article-button {
-
     padding: 5px;
   }
 
-
-
+  /*BLOG POSTS MOBILE*/
   .skills-imgz {
     padding: 80px;
-    margin-left: 10px;
   }
 
+
+  /**MOBILE HOMEPAGE**/
   .bread-basket-box,
   .dessert-box,
   .mezcal-box,
@@ -394,17 +351,8 @@ div.sidebar ul {
   .openings-box,
   .gras-box,
   .cocktail-box {
-    min-width: 300px;
     justify-content: center;
-
   }
-
-  .skills-imgs p {
-    font: 20px;
-  }
-
-
-
 
 
 
@@ -412,10 +360,6 @@ div.sidebar ul {
 
 
 }
-
-
-
-
 
 
 
@@ -428,7 +372,7 @@ div.sidebar ul {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(100px)
+    transform: translateX(50px)
   }
 
   to {
@@ -452,22 +396,52 @@ div.sidebar ul {
 
 .nav-active {
   transform: translateX(0%);
-  display: flex;
+
 }
 
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 10px;
+  /* Place the button 30px from the right */
+  z-index: 200;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: 3px;
+  /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.068);
+  /* Set a background color */
+  color: rgb(255, 255, 255);
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 19px;
+  /* Rounded corners */
+  font-size: 30px;
+  /* Increase font size */
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.5;
+}
 
 /**NAV STYLES**/
 
 
-.nav-links {
-  justify-content: space-around;
-
-  text-decoration: none;
-}
-
 .nav-links li {
   list-style: none;
+  color: white;
+}
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: 'Calistoga', Arial, Helvetica, sans-serif;
 }
 
 .nav-links a {
@@ -475,8 +449,13 @@ div.sidebar ul {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 30px;
 }
+
+.nav-links a:hover {
+  color: #213bd2;
+}
+
 
 /*GRID*/
 .skills-img-grid-row {
@@ -487,14 +466,15 @@ div.sidebar ul {
 }
 
 .skills-imgs {
-  padding: 60px;
+  padding: 30px;
+
 }
 
 
 
 #articles a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 251, 251);
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -517,9 +497,10 @@ div.sidebar ul {
 .cocktail-box {
   border: solid;
   padding: 10px;
-  height: 300px;
-  width: auto;
+  height: 400px;
+  width: 350px;
   transition: transform .2s;
+  justify-content: center;
 }
 
 /*HOMEPAGE ARTICLE TITLES*/
@@ -539,14 +520,29 @@ div.sidebar ul {
 
 .skills-imgz {
   padding: 10px;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  position: block;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
 }
 
-/*HOMEPAGE BREAD BASKET*/
-.bread-basket-box img {
-  height: 210px;
-  width: auto
+/*HOMEPAGE IMGS*/
+
+#bestba,
+#drinks,
+#gras,
+#open,
+#cal,
+#brunch-pic,
+#vibes-pic,
+#roof-pic,
+#dessert-pic {
+  margin-left: 25px;
+  margin-top: 30px;
 }
+
 
 
 
@@ -554,6 +550,8 @@ div.sidebar ul {
 /*BLOGSPOSTS***********************/
 #blog-post h2 {
   text-align: center;
+  font-family: 'PT Sans';
+  font-size: 40px;
 }
 
 #blog-post p {
@@ -562,7 +560,8 @@ div.sidebar ul {
 }
 
 .blogbox {
-  margin: 40px;
+
+  margin: 10px;
   -moz-box-shadow: inset 0 0 10px #ad0707;
   -webkit-box-shadow: inset 0 0 10px #520707;
   box-shadow: inset 10 0 10px;
@@ -588,13 +587,35 @@ div.sidebar ul {
   text-align: left;
 }
 
+.photo-caption {
+  color: gray;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/*********BREAD BASKET***********/
+#bread1,
+#bread2,
+#bread3,
+#bread4,
+#bread5 {
+  margin-top: 20px;
+  min-width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+
 /***LISTS***/
 .ordered-list-blog {
   font-family: 'PT Sans';
   font-size: 30px;
-  padding: 10px;
+  padding: 20px;
   text-align: left;
-
 }
 
 .ordered-list-blog img {
@@ -608,14 +629,33 @@ div.sidebar ul {
   font-size: 16px;
 }
 
+.food-item {
+  padding: 0px;
+}
+
+.list-p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+/***FOIE GRAS***/
 .gras-intro {
   font-family: 'PT Sans';
 
 }
 
+
 /**FOOTER**/
 footer {
   background-color: rgb(62, 141, 194);
+  display: block;
+  padding: 20px;
 }
 
 footer p {
@@ -625,71 +665,99 @@ footer p {
   font-size: 12px;
 }
 
-/**BORDER**/
-#top,
-#bottom,
-#left,
-#right {
-  position: fixed;
-  z-index: 1;
-  background: rgb(62, 141, 194);
-}
 
-#left,
-#right {
-  top: 0;
-  bottom: 0;
-  width: 20px;
-}
-
-#left {
-  left: 0;
-}
-
-#right {
-  right: 0;
-}
-
-#top,
-#bottom {
-  left: 0;
-  right: 0;
-  height: 20px;
-}
-
-#top {
-  top: 0;
-}
-
-#bottom {
-  bottom: 0;
-}
 
 @media
 /* Fairly small screens including iphones */
 only screen and (max-width: 500px),
 
 /* iPads */
-only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
 
-  #top,
-  #bottom,
-  #left,
-  #right {
-    display: none;
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px)
   }
 
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px)
-    }
+  to {
 
-    to {
-
-      opacity: 1;
-      transform: translateX(0px);
-    }
+    opacity: 1;
+    transform: translateX(0px);
   }
+}
+
+
+.banner img {
+  width: 99.99%;
+  height: auto;
+  display: block;
+  align-content: center;
+  margin-right: .01px;
+  background-position: center;
+  background-size: cover;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+
+
+body,
+skilw-img-grid-row {
+  background-color: #0a0a0a;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+.banner {
+  /* The image used */
+  background-image: url("images/landingpg.png");
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  margin: auto;
+}
+
+/*NAV*/
+.nav-links {
+  position: fixed;
+  right: 0px;
+  height: 92vh;
+  top: 8vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  /**MOVE CONTAINER OFF THE SCREEN**/
+  transition: transform 0.5s ease-in;
 
 }
+
+
+
+
+
+/*** CODE REUSE
+ORDERED LIST BLOG
+<div class="food-item">
+  <li class="#">fjdksjf</li>
+  <img id="#" src="images/#">
+  <p class="list-p">
+    <strong>Price: </strong>$9<br>
+    <strong>Highlights: </strong>
+  </p>
+</div>
+**/
